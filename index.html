@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     
+    <div class="main_container" id="mainContainer">
+      <div class=""><img src="./signup-img.jpg" alt="" /></div>
+
+      <div class="container">
+        <h1>Student Registeration Form</h1>
+        <form  action="#" name="StudentRegistrationForm" id="StudentRegistrationForm"  >
+        <div class="name_sur">
+
+          <div class="name name" >
+            <p>Name:</p>
+            <input  type="text" id="name" name="textnames"/>
+          </div>
+
+          <div class="name surname">
+            <p>Sirname:</p>
+            <input type="text" id="sirname" name="textnames"/>
+          </div>
+        </div>
+
+        <div class="adres">
+          <p>Addres:</p>
+          <input class="bottom" id="addres" type="text"/>
+        </div>
+
+        <div class="gender">
+          <span>Gender:</span>
+          <input class="gen" type="radio" id="male" name="gender"/> Male
+          <input class="gen" type="radio" id="female" name="gender"/> Female
+        </div>
+        <div class="city_state">
+          <div class="city city">
+            <p>State:</p>
+            <select  class="city first" id="state" >
+                <option value=""></option>
+              <option value="California">California</option>
+              <option value="Sacramento">Sacramento</option>
+            </select>
+          </div>
+          <div class="city state">
+            <p>City:</p>
+            <select class=" city second" id="city" >
+                <option value=""></option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Sacramento City">Sacramento City</option>
+            </select>
+          </div>
+        </div>
+
+        <p>DOB:</p>
+        <input class="bottom" id="dob" type="text" name="psw"/>
+        <p>Pincode:</p>
+        <input class="bottom" id="pincode" type="password" name="psw"/>
+        <div>Course:</div>
+        <select class="sellector" id="course" >
+          <option value=""></option>
+          <option value="Computer">Computer</option>
+          <option value="Design">Design</option>
+          <option value="MArketing">Marketing</option>
+        </select>
+
+        <p>Email ID:</p>
+        <input class="bottom" id="e_mail" type="text" name="psw"/>
+        <br>
+
+        <div class="button_container">
+         
+          <button  onclick="newUser()" class="registerbtn" >Submit Form</button>
+        </div>
+      </div>
+    </div>
+</form>
+
+
+<div class="extra_container" id="extra_container"> 
+     <div>
+    <p id="text">message here</p>
+    <img src="./you-can-do-say-yes-cheerful-confident-young-supportive-african-american-man-white-t-shirt-wink-smile-you-can-do-169187039-removebg-preview.png" alt="">
+     </div>
+    <div>
+     <p class="wellcoming" id="welcoming">Here your registered information:</p>   
+    <div><span id="name">Name:</span> <span id="nameid">name here</span></div>
+    <div><span id="name">Sirname:</span> <span id="sirnameid">sirname here</span></div>
+    <div><span id="name">Addres:</span> <span id="addresid">addres here</span></div>
+    <div><span id="name">Gender:</span> <span id="maleid">gender</span></div>
+    <div><span id="name">State:</span> <span id="stateid">state here</span></div>
+    <div><span id="name">City:</span> <span id="cityid">city here</span></div>
+    <div><span id="name">Dob:</span> <span id="dobid">Dob here</span></div>
+    <div><span id="name">Pincode:</span> <span id="pinid">Dob here</span></div>
+    <div><span id="name">Course:</span> <span id="courseid">Course here</span></div>
+    <div><span id="name">E-Mail:</span> <span id="emailid">e-mail here</span></div>
+    <button id="reset" class="resetbtn" onclick="resetAll()">Reset All</button>
+   </div>
+ 
+  </div>
+
+
+<script src="./app.js"></script>
+  </body>
+</html>

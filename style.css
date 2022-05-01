@@ -1,0 +1,171 @@
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+}
+
+.main_container {
+  display: flex;
+  width: 100%;
+  font-weight: 800;
+  font-size: 16px;
+}
+.gender {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+
+  height: auto;
+}
+.container {
+  width: 70%;
+  padding-left: 20px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.name_sur {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+textarea,
+select {
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+}
+.city_state {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.city {
+  width: 80%;
+}
+
+input:focus {
+  border: 1px solid rgb(238, 169, 41);
+  outline: none;
+}
+div {
+  padding: 10px 0;
+}
+
+.registerbtn {
+  background-color: #f54c09;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+.button_container {
+  display: flex;
+  gap: 15px;
+  width: 50%;
+  float: right;
+  margin-right: 50px;
+}
+.name {
+  width: 100%;
+}
+.bottom {
+  width: 90%;
+}
+.sellector {
+  width: 95%;
+}
+.gen {
+  width: 10%;
+}
+#male {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #f54c09;
+  appearance: none;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+  padding: 6px;
+}
+#male:checked {
+  background-color: #f54c09;
+}
+#female {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px#f54c09;
+  appearance: none;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  padding: 6px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+}
+#female:checked {
+  background-color: #f54c09;
+}
+
+.resetbtn {
+  background-color: #dee4de;
+  color: rgb(29, 28, 28);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  float: right;
+}
+.resetbtn:hover {
+  background-color: #f54c09;
+  
+}
+.registerbtn:hover {
+  opacity: 70%;
+}
+.extra_container {
+  width: 50%;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: left;
+  position: absolute;
+  top: 10%;
+  transform: translate(-50, -50);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main_container {
+    display: grid;
+    place-items: center;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 30px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+}
