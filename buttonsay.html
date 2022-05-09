@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="color_btn" onclick="changeColor()">push</button>
+
+    <style>
+        button{
+            pad: 15px;
+        }
+    </style>
+
+    
+
+
+   <script>
+       let button = document.getElementById("color_btn"); 
+       let counter = 0
+
+function changeColor () {
+
+    counter++
+
+    if(counter==5 ){
+        document.body.style.backgroundColor= "red";
+
+    }else if( counter>=5 &&  counter<15) 
+    { document.body.style.backgroundColor = "green"
+
+    }
+    else if( counter>=16 ) { document.body.style.backgroundColor = "blue"
+
+    }
+    button.innerHTML=counter
+    
+     
+      
+    
+  
+
+}
+
+
+
+
+   </script>
+ 
+    
+</body>
+</html>
